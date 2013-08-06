@@ -1,0 +1,84 @@
+!!!
+html(lang="en")
+	head
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		title Gifting Block&trade; - Getting Started
+		link(rel='stylesheet', href='bootstrap/css/bootstrap.css')
+		link(rel='stylesheet', href='bootstrap/css/bootstrap-responsive.css')
+		link(rel='stylesheet', href='css/custom.css')
+		link(rel='stylesheet', href='css/bootstrap-modal.css')
+		
+		link(rel='stylesheet', href='css/flat-ui.css')
+		link(rel='shortcut icon', href='images/favicon.ico')
+		
+		link(rel='stylesheet', href='http://fuelcdn.com/fuelux/2.2/css/fuelux.css')
+		link(rel='stylesheet', href='http://fuelcdn.com/fuelux/2.2/css/fuelux-responsive.css')
+		
+		script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js",type="text/javascript")
+		script(src="http://fuelcdn.com/fuelux/2.2/loader.min.js",type="text/javascript")
+		
+		| <!--[if lt IE 9]> script(type='text/javascript', src='js/html5shiv.js')<![endif]-->
+	body
+		// Begin Top Bar
+		div.navbar.navbar-inverse
+			div.navbar-inner
+				div.container-fluid
+					button.btn.btn-navbar(data-toggle="collapse",data-target=".nav-collapse")
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+					a.brand(href="#" ,name="top")
+						img(src="img/finale-logo.png")
+					div.nav-collapse.collapse
+						ul.nav
+							li.offset1
+								a(href="#")
+									div.input-append
+										input.input-xxlarge(type="text", name="Search")
+										span.add-on
+											i.fui-eye(style="color:#000")
+						ul.nav.pull-right.hidden-tablet(style="margin-top: 15px; margin-left: 15px; margin-right: 50px;")
+							li
+								a(href="#")
+									img(src="img/little-box.png" ,width="24px", height="24px") span.hidden-desktop Notifications
+									span.navbar-new-bt 1
+							li
+								a(href="/profile")
+									span.fui-user
+									span.hidden-desktop My Profile
+								ul
+									li
+										a(href="/edit-profile") 
+											i.icon-pencil.icon-white
+											| Edit Your Profile
+									li.divider
+									li
+										a(href="#")
+											i.icon-th-large.icon-white
+											| Find Friends
+									li
+										a(href="mailto:support@giftingblock.com")
+											i.icon-envelope.icon-white
+											| Contact Support
+							
+							li.active
+								a(href="/products")
+									img(src="img/cart.png",width="24px", height="24px")
+									span.hidden-desktop Browse Products
+								ul
+									li
+										a(href="/shopping-cart")
+											i.icon-shopping-cart.icon-white
+											| My Shopping Cart
+							li
+								a(href="/settings" ,alt="Settings",title="Your Settings", rel="nofollow")
+									span.fui-gear
+									span.hidden-desktop Settings
+								ul(style="width:125px;")
+									li
+										a(href="/logout")
+											i.icon-off.icon-white
+											| Log Out
+		div
+			| Design is not complete yet
